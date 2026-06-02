@@ -39,6 +39,7 @@ With Worker Threads:
 
 Why we use Worker Threads?
  To handle:
+
  ->CPU-heavy tasks
  ->Large calculations
  ->Image processing
@@ -46,4 +47,79 @@ Why we use Worker Threads?
 
  REFERENCE :Akshay saini
 ==========================================================================
+ DAY-2
+ !!---Error handling:---!!
+
+
+1 Synchronous Error Handling
+ => Errors that happen immediately during execution
+ Handled using: try...catch
+  try {
+  JSON.parse("invalid");
+} catch (err) {
+  console.log("Error:", err.message);
+}
+
+2.Callback-based Error Handling
+-> Old Node.js style (error-first pattern)
+
+3.Promise-based Error Handling
+ -> Modern approach using .then() and .catch()
+
+4.Async/Await Error Handling
+ -> Best and cleanest method
+5.EventEmitter Error Handling
+  -> Used in streams, servers, etc.
+6.Custom Error Handling (Advanced)
+  -> Create your own error classes
+
+| Type         | Used For          | Method              |
+| ------------ | ----------------- | ------------------- |
+| Synchronous  | Immediate errors  | try-catch           |
+| Callback     | Async (old style) | (err, data)         |
+| Promise      | Async             | .catch()            |
+| Async/Await  | Async (modern)    | try-catch           |
+| EventEmitter | Events/streams    | .on('error')        |
+| Global       | Unhandled errors  | process.on()        |
+| Custom       | Structured errors | class extends Error |
+
+
+--------------------------------------------
+
+!!---Streams---!!
+
+->Data is processed piece by piece (chunk by chunk) 
+->Faster + memory efficient 
+| Type      | Description                 |
+| --------- | --------------------------- |
+| Readable  | Read data (file, request)   |
+| Writable  | Write data (file, response) |
+| Duplex    | Read + Write                |
+| Transform | Modify data while streaming |
+
+--------------------------------------------
+
+!!---Worker Threads:---!!
+
+ ->Worker Threads in Node.js are a feature that allows you to run JavaScript code in parallel threads, separate from the main thread.
+
+ ->Normally, Node.js is:  Single-threaded (one main thread)
+Uses event loop for async tasks
+
+👉 Problem: CPU-heavy tasks (like large loops, calculations)
+These tasks block the main thread ❌
+
+👉 Solution: Use Worker Threads to run heavy tasks in background threads ✅
+---------------------------------------------
+!!---Clustering----!!
+  
+=>Clustering in Node.js is a technique to run multiple instances of your app so you can use all CPU cores instead of just one.
+  
+ Why Clustering?
+  ->By default: Node.js uses only 1 CPU core 
+
+ -> With clustering: It uses multiple cores ,Handles more requests 
+
+----------------------------------------------------
+
 
