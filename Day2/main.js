@@ -2,7 +2,7 @@ const { Worker } = require('worker_threads');
 
 console.log("Start");
 
-const worker = new Worker('./worker_threads.js');
+const worker = new Worker('./worker.js');
 
 worker.on('message', (result) => {
   console.log("Sum:", result);
