@@ -8,7 +8,7 @@ Event loop manages:
  =>Call Stack
  =>Callback Queue
  =>Microtask Queue
- =>Simple idea:
+
 
 2. Callbacks
  => A callback is a function passed into another function.
