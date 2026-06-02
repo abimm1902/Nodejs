@@ -26,14 +26,6 @@ a(function b(){
 
 console.log("End");
 
-console.log("Start");
- const doc=document.getElementById("btn")
-.addEventListener("click",function cb(){
-    console.log("callback");
-    
-});
-console.log("End");
-
 //Example -3
 
 function fetchData(callback) {
