@@ -12,26 +12,23 @@ Event loop manages:
 
 2. Callbacks
  => A callback is a function passed into another function.
-
-===================================================================
+-----------------------------------
 3.Promise
   =>Promises solve callback problems.
 States:
   1.Pending
   2.Resolved
   3.Rejected
-
-======================================================================
+  ---------------------------------
 4. Async / Await
     => Best way to handle async code.  
-=====================================================================
+------------------------------------------
 5.Streams 
   =>Streams = process data in chunks (piece by piece) instead of loading everything at once.
  Example:
    ❌ Without stream → load full 1GB file into memory
    ✅ With stream → read 64KB chunks → faster & memory efficient
-
-=================================================================
+-----------------------------------
 6.Worker Threads = run heavy tasks in separate threads (parallel)
 Normally:
    Node.js runs on single thread
