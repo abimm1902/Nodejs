@@ -1,130 +1,130 @@
 // DAY -1
 //Callback
 //Example -1
-// console.log("Starts");
+console.log("Starts");
 
-// setTimeout(function cbT(){
-// console.log("Callback SetTimeout");
-// },5000);
+setTimeout(function cbT(){
+console.log("Callback SetTimeout");
+},5000);
 
-// fetch("https://6942677e69b12460f311075f.mockapi.io/details")
-// .then(function cbf(){
-//     console.log("CB Netflix");
+fetch("https://6942677e69b12460f311075f.mockapi.io/details")
+.then(function cbf(){
+    console.log("CB Netflix");
     
-// })
+})
 
 
 //Example-2
-// function a(b){
-//     console.log(" i am from a");
-//     b();  
-// }
-// a(function b(){
-//     console.log(" iam from b");
+function a(b){
+    console.log(" i am from a");
+    b();  
+}
+a(function b(){
+    console.log(" iam from b");
     
-// });
+});
 
-// console.log("End");
+console.log("End");
 
-// console.log("Start");
-//  const doc=document.getElementById("btn")
-// .addEventListener("click",function cb(){
-//     console.log("callback");
+console.log("Start");
+ const doc=document.getElementById("btn")
+.addEventListener("click",function cb(){
+    console.log("callback");
     
-// });
-// console.log("End");
+});
+console.log("End");
 
 //Example -3
 
-// function fetchData(callback) {
-//   console.log("Fetching data...");
+function fetchData(callback) {
+  console.log("Fetching data...");
 
-//   setTimeout(() => {
-//     callback("Data received");
-//   }, 2000);
-// }
+  setTimeout(() => {
+    callback("Data received");
+  }, 2000);
+}
 
-// fetchData((abi) => {
-//   console.log(abi);
-// });
+fetchData((abi) => {
+  console.log(abi);
+});
 
 
 //Promise
  //Example 1
-// function fetchData() {
-//   return new Promise((resolve, reject) => {
-//     console.log("searching data");
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    console.log("searching data");
 
-//     setTimeout(() => {
-//       resolve("Data received");
-//     }, 2000);
-//   });
-// }
+    setTimeout(() => {
+      resolve("Data received");
+    }, 2000);
+  });
+}
 
-// fetchData()
-//   .then((result) => {
-//     console.log(result);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+fetchData()
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 //Example-2
 
-// function checkLogin(username, password) {
-//   return new Promise((resolve, reject) => {
-//     console.log("Checking login...");
+function checkLogin(username, password) {
+  return new Promise((resolve, reject) => {
+    console.log("Checking login...");
 
-//     setTimeout(() => {
-//       if (username === "admin" && password === "1234") {
-//         resolve("Login successful ");
-//       } else {
-//         reject("Invalid username or password");
-//       }
-//     }, 2000);
-//   });
-// }
+    setTimeout(() => {
+      if (username === "admin" && password === "1234") {
+        resolve("Login successful ");
+      } else {
+        reject("Invalid username or password");
+      }
+    }, 2000);
+  });
+}
 
 // // Call the function
-// checkLogin("admin", "12434")
-//   .then((result) => {
-//     console.log(result);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+checkLogin("admin", "12434")
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 
   //Async/await
 
   //Example-1
 
-//  function checkLogin(username, password) {
-//   return new Promise((resolve, reject) => {
-//     console.log("Checking login...");
+ function checkLogin(username, password) {
+  return new Promise((resolve, reject) => {
+    console.log("Checking login...");
 
-//     setTimeout(() => {
-//       if (username === "admin" && password === "1234") {
-//         resolve("Login successful ");
-//       } else {
-//         reject("Invalid credentials ");
-//       }
-//     }, 2000);
-//   });
-// }
+    setTimeout(() => {
+      if (username === "admin" && password === "1234") {
+        resolve("Login successful ");
+      } else {
+        reject("Invalid credentials ");
+      }
+    }, 2000);
+  });
+}
 
 // // Using async/await
 
-// async function loginUser() {
-//   try {
-//     const result = await checkLogin("admin", "1234");
-//     console.log(result);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+async function loginUser() {
+  try {
+    const result = await checkLogin("admin", "1234");
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
 
-// loginUser();
+loginUser();
 
 //Example-2
 
