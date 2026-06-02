@@ -122,14 +122,14 @@ loginUser();
 
 function emailLogout(username,password){
     return new Promise((resolve,reject)=>{
-        if(username == "abi" || password == 321)
-             console.log("logout sucessfull");
+        if(username === "abi" || password === 321)
+             resolve("logout sucessfull");
         else
-            console.log("login again");
+            reject("login again");
                  
-    })
-}
-async function cofirmLogout(){
+    });
+};
+async function confirmLogout(){
     try{
       const result =await emailLogout("abi","321");
       console.log(result);
@@ -139,7 +139,7 @@ async function cofirmLogout(){
     
     }
 }
-cofirmLogout();
+confirmLogout();
 
 
 
