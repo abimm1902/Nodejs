@@ -1,5 +1,5 @@
 // // Error Handling
-
+const fs = require('fs');
 let a= undefined;
 
 try {
@@ -22,7 +22,7 @@ try {
 }
 
 // //2.Callback Error Handling
-const fs = require('fs');
+
 
 fs.readFile('test.txt', 'utf8', (err, data) => {
   if (err) {
@@ -113,7 +113,6 @@ const fn = outer();
 //Streams
 
 //Writing streams
-const fs = require('fs');
 
 const writeStream = fs.createWriteStream('output.txt');
 
@@ -127,8 +126,6 @@ writeStream.on('finish', () => {
 });
 
 //Pipe
-
-const fs = require('fs');
 
 const readStream = fs.createReadStream('output.txt');
 const writeStream = fs.createWriteStream('copy.txt');
