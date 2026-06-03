@@ -144,10 +144,6 @@ console.log(Emp1.getEMpPhoneNo());
 console.log(Emp1);
 
 
-
-
-
-
 // class BankAccount {
 //     constructor(name, balance) {
 //         this.name = name;
@@ -256,3 +252,24 @@ console.log(Emp1);
 
 let empl1=new Emp("John",30,20000);
 empl1.getEmpDetails();
+//Event emitter 
+//In Node.js, an Event Emitter is a core module that allows objects to communicate using events.
+//It follows the publish–subscribe pattern:
+//One part of the code emits (triggers) an event
+//Another part listens (handles) that event
+const EventEmitter = require('events');
+
+// Create emitter object
+const emitter = new EventEmitter();
+
+// Create an event listener
+emitter.on('greet', () => {
+    console.log('Hello, Event Triggered!');
+});
+
+// Trigger the event
+emitter.emit('greet');
+
+
+
+
