@@ -122,5 +122,29 @@ These tasks block the main thread ❌
 
  REFERENCE :Akshay saini,Chatgbt
 ----------------------------------------------------
+**!!!---DAY 3---!!!**
 
+**Topics learned:**
 
+1.Classes & Objects (ES6):
+  ->Created a User class with constructor, instance methods, and static properties.
+  ->Implemented login/logout functionality and tracked total users using static methods.
+2.Static Methods & Properties
+  ->Learned how static variables (userCount) and methods work at the class level.
+3.Inheritance
+  ->Implemented a PaidUsers class extending the User class.
+  ->Used super() to inherit properties and added new features like storage.
+     Practiced method overriding.
+4.Method Chaining
+ ->Implemented chaining by returning this from methods.
+5.Prototype
+  ->Understood prototype-based inheritance in JavaScript.
+   ->Added methods using User.prototype.
+6.Encapsulation
+   ->Built an Employee class with setter and getter methods to control access to data.
+7.Getters & Setters
+  ->Implemented getter and setter methods using a Temperature class.
+8.Abstraction
+  ->Created an Emp function to hide internal salary calculation logic and expose only required details.
+9.Polymorphism
+   ->Demonstrated method overriding using Father and Son classes with different implementations of the same method.
