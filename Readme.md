@@ -186,3 +186,54 @@ These tasks block the main thread ❌
 ->Another part listens (handles) that event
 
 Reference :https://www.youtube.com/@RaghavPal
+--------------------------------------
+
+**!!!---DAY 4---!!!**
+
+
+Date: 04 June 2026
+
+1. Stream Large File
+
+Learned how to handle very large files (up to 1GB) using Node.js Streams
+without causing memory crashes.
+
+Key Points: - Used Writable Streams to create a large file. - Used
+Readable Streams to read the file chunk by chunk. - Avoided loading the
+entire file into memory. - Improved application performance and memory
+efficiency. - Implemented error handling for stream operations.
+
+Benefits: - Low memory consumption. - Faster processing of large
+files. - Suitable for production applications.
+
+2. Logger Service
+
+Learned how to build and use a Logger Service in Node.js.
+
+Features: - INFO: Logs general application information. - ERROR: Logs
+errors and exceptions. - DEBUG: Logs debugging information. - Write to
+File: Stores logs in a file for future reference.
+
+Benefits: - Easier debugging and monitoring. - Centralized logging
+mechanism. - Better maintenance and troubleshooting.
+
+3. Custom Event Emitter
+
+Learned how Node.js EventEmitter works and implemented a custom
+event-driven system.
+
+Methods Implemented:
+
+on() - Registers an event listener. - Executes every time the event is
+emitted.
+
+emit() - Triggers an event. - Passes data to registered listeners.
+
+once() - Registers a listener that executes only one time. -
+Automatically removes itself after execution.
+
+Practical Usage: - Triggered file creation events. - Managed application
+events using an event-driven approach. - Improved code modularity and
+flexibility.
+
+
