@@ -9,6 +9,37 @@ Event loop manages:
  =>Callback Queue
  =>Microtask Queue
 
+=>The Event Loop in JavaScript (especially in Node.js and browsers) is the mechanism that handles asynchronous operations.
+It continuously checks:
+1.Call Stack → currently executing code
+2.Task Queues → pending callbacks/tasks
+3.Executes tasks in specific phases
+
+The Node.js event loop has 6 main phases:
+
+┌───────────────────────────┐
+│           timers          │
+├───────────────────────────┤
+│     pending callbacks     │
+├───────────────────────────┤
+│       idle, prepare       │
+├───────────────────────────┤
+│           poll            │
+├───────────────────────────┤
+│           check           │
+├───────────────────────────┤
+│      close callbacks      │
+└───────────────────────────┘
+
+
+
+
+
+
+
+
+
+
 
 2. Callbacks
  => A callback is a function passed into another function.
