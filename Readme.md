@@ -236,4 +236,181 @@ Practical Usage: - Triggered file creation events. - Managed application
 events using an event-driven approach. - Improved code modularity and
 flexibility.
 
+----------------------------------------------------------
 
+!!!----DAY-5 ----!!!
+
+1. Introduction to TypeScript
+What is TypeScript?
+  =>TypeScript is a superset of JavaScript that adds static typing and additional features to make applications more reliable and maintainable.
+
+Benefits:
+->Compile-time error checking
+->Better code readability
+->Improved IDE support and IntelliSense
+->Easier debugging
+->Better scalability for large applications
+->Example
+->let message: string = "Hello TypeScript";
+->console.log(message);
+2. Basic Data Types
+1.Number:
+ ->Used to store numeric values.
+Ex:
+let age: number = 25;
+2.String:
+ ->Used to store text values.
+ Ex:
+let name: string = "John";
+3.Boolean
+->Used to store true or false values.
+ex:
+let isActive: boolean = true;
+4.Any
+->Can hold any type of value.
+Ex:
+let data: any = "Hello";
+data = 100;
+data = true;
+5.Unknown
+->Safer alternative to any.
+Ex:
+let value: unknown = "Hello";
+6. Arrays
+->Arrays store multiple values of the same type.
+
+let numbers: number[] = [1, 2, 3, 4];
+let names: string[] = ["John", "David"];
+
+7.Alternative syntax:
+
+let ids: Array<number> = [1, 2, 3];
+8.. Tuples
+  ->Tuples allow fixed-length arrays with specific types.
+
+let employee: [number, string];
+
+employee = [101, "John"];
+9. Enums
+ ->Enums represent a set of named constants.
+
+enum Role {
+  Admin,
+  User,
+  Guest
+}
+
+let myRole: Role = Role.Admin;
+10. Functions
+
+Functions can define parameter and return types.
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+console.log(add(10, 20));
+
+Output:
+30
+11. Arrow Functions
+ ->Modern syntax for writing functions.
+
+const multiply = (a: number, b: number): number => {
+  return a * b;
+};
+
+console.log(multiply(5, 4));
+
+Output:
+20
+12. Optional Parameters
+ ->Parameters can be marked as optional using ?.
+ex:
+function greet(name: string, age?: number) {
+  console.log(`Hello ${name}`);
+}
+
+greet("John");
+greet("John", 25);
+13. Union Types
+ ->A variable can store multiple types.
+ex:
+let id: string | number;
+
+id = 100;
+id = "EMP100";
+14. Type Aliases
+  ->Type aliases create reusable custom types.
+ex:
+type Employee = {
+  id: number;
+  name: string;
+};
+
+const emp: Employee = {
+  id: 1,
+  name: "John"
+};
+15. Interfaces
+ ->Interfaces define the structure of objects.
+Ex:
+interface Customer {
+  firstName: string;
+  lastName: string;
+  age: number;
+  middleName: string;
+}
+Example:
+interface Customer {
+  firstName: string;
+  lastName: string;
+  age: number;
+  middleName: string;
+}
+
+function greetUser(user: Customer) {
+  return `Hello ${user.firstName} ${user.lastName}`;
+}
+
+function logUserDetails(user: Customer) {
+  console.log(
+    `User: ${user.firstName} ${user.lastName} ${user.middleName}, Age: ${user.age}`
+  );
+}
+
+let user1: Customer = {
+  firstName: "John",
+  lastName: "Doe",
+  middleName: "Francis",
+  age: 29
+};
+
+console.log(greetUser(user1));
+logUserDetails(user1);
+
+Output:
+Hello John Doe
+User: John Doe Francis, Age: 29
+
+16. Common Error Learned
+ ->Property Name Mismatch
+Incorrect:
+interface Customer {
+  middelName: string;
+}
+
+let user1 = {
+  middleName: "Francis"
+};
+
+Error occurs because:
+
+middelName !== middleName
+
+Property names must match exactly.
+
+Correct:
+
+interface Customer {
+  middleName: string;
+}
