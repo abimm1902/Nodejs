@@ -238,7 +238,8 @@ flexibility.
 
 ----------------------------------------------------------
 
-!!!----DAY-5 ----!!!
+**!!!----DAY-5 ----!!!**
+**TypeScript**
 
 1. Introduction to TypeScript
 What is TypeScript?
