@@ -479,8 +479,28 @@ ES Modules (import/export)
 Understood the role of:
 package.json
 "type": "module"
+---------------------------------------------------------------
 
+!!!---DAY-8----!!
 
+1. Introduction to Express.js
+ -> Learned the basics of Express.js, a web framework for Node.js.
+ -> Understood how to install and configure Express in a project.
+ -> Explored the structure of an Express application.
+2. Creating an Express Server
+  -> Created a simple Express server.
+  -> Configured routes and handled HTTP requests.
+  -> Learned how to start the server and listen on a specific port.
+  -> Tested server responses using a browser and API tools.
+3. Mini Project Development
+   -> Implemented small practice projects using Express.
+  -> Created basic endpoints for handling requests and sending responses.
+  -> Applied routing concepts learned during the session.
+4. API Testing and Verification
+   -> Learned different methods to test APIs.
+   -> Verified API responses using testing tools.
+   -> Checked request methods such as GET and POST.
+   ->Validated status codes and response data.
 
 
 
