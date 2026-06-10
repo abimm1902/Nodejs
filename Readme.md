@@ -417,3 +417,77 @@ interface Customer {
 }
 //!!REFERENCE - https://youtu.be/jrFZkfDmq2I?si=iRB5V0BDAFBO7Co9
 
+----------------------------------------------------------------
+
+!!!!-----DAY6-------!!!!
+
+----Topics Covered:-
+1.Classes
+2.Inheritance
+3.Closures
+4.Access Modifiers (public, private, protected)
+5.Static Methods
+6.Static Properties
+7.Generics
+8.Type Casting
+9.Type Assertion
+10.Intersection Types
+----Key Takeaways:-
+->Classes help organize code using Object-Oriented Programming (OOP).
+->Inheritance promotes code reuse.
+->Closures preserve state and enable data privacy.
+->Access modifiers provide encapsulation and security.
+->Static members belong to the class rather than instances.
+->Generics create reusable and type-safe code.
+->Type Casting and Type Assertion help handle unknown data safely.
+->Intersection Types combine multiple interfaces into one powerful type.
+
+----------------------------------------------------------
+
+!!!!!-----DAY7-----!!!!
+
+1. TypeScript Mini Project – POS System
+  -> Worked on a TypeScript-based Inventory Management and POS System.
+  ->Practiced creating classes, constructors, and objects.
+   ->Fixed TypeScript compilation errors related to:
+    ->Using types as values.
+   ->Incorrect method arguments.
+   ->Object structure validation.
+   ->Improved understanding of TypeScript type checking and class implementation.
+    
+3. Express.js with TypeScript:-
+Learned how to set up an Express.js application using TypeScript.
+Installed and configured required packages:
+   express
+   typescript
+   ts-node
+   @types/express
+   @types/node
+Created a basic Express server in TypeScript.
+
+!!!--Understood:-
+Type definitions (@types)
+Request and Response typing
+TypeScript compilation and execution
+Project structure for Express applications
+5. Node.js Module Configuration
+Explored module-related warnings in Node.js.
+
+Learned the difference between:-
+CommonJS (require)
+ES Modules (import/export)
+Understood the role of:
+package.json
+"type": "module"
+
+
+
+
+
+
+
+
+
+
+
+
