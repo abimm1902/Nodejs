@@ -501,7 +501,75 @@ package.json
    -> Verified API responses using testing tools.
    -> Checked request methods such as GET and POST.
    ->Validated status codes and response data.
+--------------------------------
+!!----Date: 12 June 2026
 
+Tasks Completed:-
+
+1. Couchbase Database Learning
+Explored the fundamentals of Couchbase, a distributed NoSQL document database.
+Learned how Couchbase stores data in JSON document format instead of traditional tables and rows.
+Studied the key components of Couchbase architecture, including:
+Cluster
+Node
+Bucket
+Scope
+Collection
+Understood the differences between SQL and NoSQL databases.
+Learned the purpose and benefits of Couchbase in modern applications, such as scalability, high availability, and performance.
+
+3. Couchbase Data Management Concepts
+Learned about CRUD (Create, Read, Update, Delete) operations in Couchbase.
+Practiced document insertion and retrieval using the Couchbase Node.js SDK.
+Explored update and delete operations on Couchbase documents.
+Understood how documents are identified using unique keys.
+
+4. Replication and High Availability
+Studied the concept of Replication in Couchbase.
+Learned how Couchbase maintains multiple copies of data across nodes.
+Understood the role of replication in ensuring data availability and fault tolerance during server failures.
+
+5. Couchbase Capella (Cloud) Exploration
+Signed in to Couchbase Capella Cloud.
+Created and configured a bucket for data storage.
+Explored bucket settings and storage configuration.
+Learned the process of creating scopes and collections within a bucket.
+Reviewed the steps required to create database credentials and whitelist IP addresses for secure access.
+
+6. Node.js Integration with Couchbase
+Learned how to connect a Node.js application to Couchbase Capella.
+Studied the installation and usage of the Couchbase SDK.
+Explored sample code for:
+Database connection
+Insert operation
+Read operation
+Update operation
+Delete operation
+Understood the workflow of accessing buckets, scopes, and collections from Node.js.
+
+7. Git and GitHub Operations
+Reviewed Git commands required for uploading projects to GitHub.
+Practiced commands for:
+Initializing a repository
+Adding files
+Creating commits
+Connecting to a remote repository
+Pushing code to GitHub
+Learned the workflow for updating existing repositories with new changes.
+
+Key Learnings:-
+Couchbase is a distributed NoSQL database designed for high performance and scalability.
+Buckets, scopes, and collections are used to organize data efficiently.
+CRUD operations can be performed using the Couchbase SDK in Node.js.
+Replication helps ensure data availability and fault tolerance.
+Couchbase Capella simplifies cloud-based database management.
+Git enables version control and efficient project collaboration.
+Next Steps
+Create scopes and collections in Couchbase Capella.
+Establish a successful Node.js connection with Couchbase.
+Implement complete CRUD APIs using Express and Couchbase.
+Build a mini Inventory Management System using Node.js, Express, TypeScript, and Couchbase.
+Explore N1QL queries and indexing concepts.
 
 
 
