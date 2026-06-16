@@ -502,6 +502,7 @@ package.json
    -> Checked request methods such as GET and POST.
    ->Validated status codes and response data.
 --------------------------------
+!!!--DAY-9----!!!
 !!----Date: 12 June 2026
 
 Tasks Completed:-
@@ -570,7 +571,80 @@ Establish a successful Node.js connection with Couchbase.
 Implement complete CRUD APIs using Express and Couchbase.
 Build a mini Inventory Management System using Node.js, Express, TypeScript, and Couchbase.
 Explore N1QL queries and indexing concepts.
+-------------------------------------------------------
+!!!---DAY-11----!!!!
+**End of Day Report – 15 June 2026**
 
+**Tasks Completed:**
+
+1. Learned Couchbase database fundamentals and document-oriented data storage.
+2. Created and managed Couchbase bucket, scope, and collections.
+3. Generated sample data for:
+
+   * Products Collection
+   * Users Collection
+   * Orders Collection
+4. Created bulk user and order documents with proper IDs:
+
+   * User IDs (user101 – user130)
+   * Product IDs (P101 – P110)
+   * Order IDs (O101 – O120)
+5. Developed CRUD operations using Couchbase Collection API:
+
+   * insert()
+   * get()
+   * replace()
+   * upsert()
+   * remove()
+   * exists()
+6. Implemented query-based business functions:
+
+   * getTopSellingProducts()
+   * getMonthlyRevenue()
+   * getCustomerPurchaseHistory()
+7. Learned the concept of Document Lookup and its advantages over N1QL queries.
+8. Studied Couchbase Replica concepts and high availability features.
+9. Practiced GitHub project upload process and .gitignore configuration.
+
+**Outcome:**
+Improved understanding of Couchbase collections, document operations, data modeling, and integration with Node.js and TypeScript.
+---------------------------------------------------
+!!!-----DAY12----!!!!
+**End of Day Report – 16 June 2026**
+
+**Tasks Completed:**
+
+1. Worked extensively with Couchbase Document Lookup operations.
+2. Implemented and tested:
+
+   * get()
+   * exists()
+   * lookupIn()
+   * getAnyReplica()
+   * getAllReplicas()
+3. Learned how to retrieve specific document fields using lookupIn().
+4. Explored the difference between:
+
+   * Full document retrieval (get())
+   * Sub-document retrieval (lookupIn())
+5. Developed Couchbase connection setup using Node.js and TypeScript.
+6. Created reusable database connection functions and collection access patterns.
+7. Accessed Couchbase collections across multiple project files using exports and imports.
+8. Resolved TypeScript issues:
+
+   * Promise return type errors
+   * Missing return statement errors
+   * Collection access issues
+9. Troubleshot Couchbase runtime issues:
+
+   * LookupInSpec import errors
+   * Unambiguous timeout errors
+   * Collection connectivity verification
+10. Learned Replica read operations and their practical use cases.
+11. Practiced Git commands for project upload and file exclusion using .gitignore.
+
+**Outcome:**
+Gained hands-on experience with Couchbase Document Lookup APIs, replica operations, collection management, TypeScript integration, and project structure organization.
 
 
 
