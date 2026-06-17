@@ -645,6 +645,37 @@ Improved understanding of Couchbase collections, document operations, data model
 
 **Outcome:**
 Gained hands-on experience with Couchbase Document Lookup APIs, replica operations, collection management, TypeScript integration, and project structure organization.
+---------------------------------------
+
+
+**Date:** 17-Jun-2026
+
+# 1. Learned NestJS Basics
+
+* Studied the fundamentals of NestJS framework.
+* Understood the architecture and key concepts of NestJS.
+* Learned about:
+
+  * Controllers
+  * Modules
+  * Providers/Services
+* Explored how NestJS is built on top of Node.js and Express/Fastify.
+* Reviewed the benefits of using NestJS for scalable and maintainable backend applications.
+
+ # 2. Sorting Task Completion
+
+* Analyzed the sorting requirement.
+* Implemented the sorting functionality successfully.
+* Verified the sorting results through testing.
+* Ensured the data is displayed in the required sorted order.
+
+# Knowledge Gained
+
+* Basic understanding of NestJS framework and its architecture.
+* Improved knowledge of backend application structuring using modules and services.
+* Enhanced understanding of sorting implementation and data handling.
+
+
 
 
 
