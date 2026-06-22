@@ -718,8 +718,144 @@ Gained hands-on experience with Couchbase Document Lookup APIs, replica operatio
 
 **Status:** Completed all assigned tasks and learning objectives for the day.
 
+-------------------------------------------------------------------
+**End of Day (EOD) Report – 22 June 2026**
+
+=> Completed the programming task assigned by Vijay.
+=> Learned JavaScript fundamentals, including primitive and non-primitive data types.
+=> Practiced the typeof operator and understood return types for different data types.
+=> Learned the differences between var, let, and const.
+=> Studied Global Scope, Function Scope, and Block Scope with examples.
+=> Practiced JavaScript comparison operators (== vs ===) and type coercion concepts.
+=> Worked through multiple JavaScript related to arrays, objects, hoisting, scope, and type conversions.
+=> Improved understanding of reference types by comparing arrays and objects.
+=> Explored JavaScript string and array sorting techniques.
+=> Practiced common JavaScript output-based  and analyzed their behavior.
+
+Date:22/6/2026
+1.
+
+const array=["tea","bat","eat","atb","tab","ate"];
+
+const obj={};
+
+for(let string of array){
+    const key=string.split('').sort().join('');
+    
+    if(!obj[key]){
+        obj[key]=[];
+    }
+    obj[key].push(string);
+}
+const result = Object.values(obj).map(group => ({
+  words: group
+}));
 
 
+ console.log(result);
+ 
+output:
+
+[
+  { words: [ 'tea', 'eat', 'ate' ] },
+  { words: [ 'bat', 'atb', 'tab' ] } 
+]
+-------------------------------------
+2.
+function flatten(arr) {
+  let result = [];
+
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      result.push(...flatten(item));
+    } else {
+      result.push(item);
+    }
+  }
+
+  return result;
+}
+
+const input = [1, 2, [3, [4, 5]], 5, 9, 3, 3, 9, 22, [7, 9, 23, 5], 11];
+const flatArr=flatten(input);
+const uniqueArray = [...new Set(flatArr)].sort((a,b)=>a-b);
+
+console.log(uniqueArray);
+
+output:
+[
+  1, 2,  3,  4,  5,
+  7, 9, 11, 22, 23
+]
+
+---------------------------------------------------
+3.compare the data types. 
+
+console.log(5 == "5");      // true
+console.log(true == 1);     // true
+console.log(null == undefined); // true
+console.log(5 === "5");     // false
+console.log(5 === 5);       // true
+console.log(true === 1);    // false
+console.log(5 != "5");      // false
+console.log(5 != 6);        // true
+console.log(5 !== "5");     // true
+console.log(5 !== 5);       // false
+
+let a = 10;
+let b = "10";
+
+console.log(typeof a); // "number"
+console.log(typeof b); // "string"
+
+console.log(typeof a === typeof b); // false
+-----------
+console.log([] == []);      // false
+console.log([] === []);     // false
+
+const a = [];
+const b = a;
+
+console.log(a == b);   // true
+console.log(a === b);  // true
+
+console.log(null == undefined);  // true
+console.log(null === undefined); // false
+
+console.log({} == {});   // false
+console.log({} === {});  // false
+
+const a = [1, 2, 3];
+const b = [1, 2, 3];
+
+console.log(JSON.stringify(a) === JSON.stringify(b));// true
+
+console.log(NaN == NaN);    // false
+console.log(NaN === NaN);   // false
+console.log(Number.isNaN(NaN)); // true
+
+| Value          | Data Type                | `typeof` Result                |
+| -------------- | ------------------------ | ------------------------------ |
+| `"Hello"`      | String (Primitive)       | `"string"`                     |
+| `123`          | Number (Primitive)       | `"number"`                     |
+| `true`         | Boolean (Primitive)      | `"boolean"`                    |
+| `undefined`    | Undefined (Primitive)    | `"undefined"`                  |
+| `Symbol()`     | Symbol (Primitive)       | `"symbol"`                     |
+| `123n`         | BigInt (Primitive)       | `"bigint"`                     |
+| `null`         | Null (Primitive)         | `"object"` ⚠️ (JavaScript bug) |
+| `{}`           | Object (Non-Primitive)   | `"object"`                     |
+| `[]`           | Array (Non-Primitive)    | `"object"`                     |
+| `function(){}` | Function (Non-Primitive) | `"function"`                   |
+| `new Date()`   | Date (Non-Primitive)     | `"object"`                     |
+| `/abc/`        | RegExp (Non-Primitive)   | `"object"`                     |
+
+"99" + 88  // "9988"
+"99" - 88  // 11
+"99" * 2   // 198
+"99" / 3   // 33
+
+4.var ,let, const difference
+5.global scope,
 
 
 
