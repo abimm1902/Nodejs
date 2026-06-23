@@ -856,7 +856,22 @@ console.log(Number.isNaN(NaN)); // true
 
 4.var ,let, const difference
 5.global scope,
+----------------------------------------------------
 
+
+
+**End of Day (EOD) Report – 23 June 2026**
+
+->Learned and implemented authentication in NestJS.
+->Completed the task assigned by Vijay.
+->Implemented password hashing using bcrypt.
+->Verified user credentials using bcrypt password comparison.
+->Developed authentication flow for user login and validation.
+->Retrieved and validated user details during authentication.
+->Tested the authentication APIs and verified expected behavior.
+
+Status: Task completed successfully. ✅
+Ref link :https://github.com/abimm1902/Authentication_Nestjs.git
 
 
 
