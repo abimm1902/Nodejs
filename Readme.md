@@ -873,7 +873,69 @@ console.log(Number.isNaN(NaN)); // true
 Status: Task completed successfully. ✅
 Ref link :https://github.com/abimm1902/Authentication_Nestjs.git
 
+---------------------------------------------------------
 
 
+   EOD Report – 24/06/2026
+
+Task Given by Vijay: Authentication using bcrypt and user verification
+
+Completed Tasks:
+
+Created authentication functionality in NestJS.
+Implemented password hashing using bcrypt while creating users.
+Implemented password verification during login.
+Created User APIs and tested them using Postman.
+Worked with Couchbase collections for storing and retrieving user data.
+Implemented get user functionality.
+Handled validation and error responses in APIs.
+Investigated and fixed Couchbase connection and document retrieval issues.
+Performed Git setup and project configuration verification.
+
+Issues Faced:
+
+Faced Couchbase connection timeout issues.
+Encountered user document retrieval issues due to key mismatches.
+Resolved TypeScript validation and data type-related errors.
+
+Status: Completed and tested authentication functionality with bcrypt. ✅
+------------------------------------------------------------
+EOD Report – 25 June 2026
+
+Tasks Completed:
+
+Developed and tested User Management APIs in NestJS.
+Implemented user creation functionality with bcrypt password hashing.
+Worked on login validation using email and password verification.
+Developed user update functionality and handled validation checks.
+Implemented reset password API with the following validations:
+New password should not match the current password.
+Users cannot reuse their last 3 passwords.
+Password history maintenance logic implemented.
+Worked on storing and managing password history in Couchbase.
+Tested APIs using Postman with various request payloads.
+Resolved issues related to document key structure (user::{id}).
+Investigated and fixed TypeScript validation and error-handling issues.
+Worked on retrieving user data along with associated user details from Couchbase collections.
+
+Issues Faced:
+
+Faced document retrieval and validation issues while updating user records.
+Encountered TypeScript type-related errors (unknown type handling).
+Addressed Couchbase query and collection access issues.
+
+Learning/Research:
+
+Explored password history management and secure reset password implementation using bcrypt.
+Reviewed NestJS DTO validation and Couchbase document management practices.
+
+Plan for Tomorrow:
+
+Complete pending API validations and edge-case testing.
+Perform end-to-end testing of authentication and password reset flows.
+Optimize exception handling and code structure.
+Continue debugging and refining Couchbase integration.
+
+Status: Completed for the day ✅
 
 
