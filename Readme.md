@@ -939,3 +939,20 @@ Continue debugging and refining Couchbase integration.
 Status: Completed for the day ✅
 
 
+--------------------------------------------
+EOD Report – 26 June 2026
+
+Tasks Completed:
+=> Worked on dynamic user search functionality in the NestJS application.
+Implemented conditional SQL query building using if statements.
+Added search support for name and email using the LIKE operator.
+Discussed improvements to dynamic query construction.
+         =>Reviewed and understood dynamic query filtering.
+Explained optional parameters such as location and limit.
+Learned how queries are built conditionally based on the request parameters.
+
+Status :-
+         =>Search functionality implementation and query logic reviewed.
+        =>Task completed successfully
+
+
