@@ -977,3 +977,19 @@ Plan for Tomorrow:
 Complete API testing for all role-based endpoints.
 Fix any issues identified during testing.
 Perform end-to-end validation of authentication and authorization flow.
+
+---------------------------------------------------
+
+
+***EOD Report – 30 June 2026***
+
+-> Studied and understood the NestJS project architecture and layered design.
+-> Explored NestJS design patterns, focusing on implementing the User module using Controller, Service, Repository, and DTO layers.
+-> Learned about NestJS decorators, including:
+-> Class Decorators (@Module, @Controller, @Injectable)
+-> Method Decorators (@Get, @Post, @Put, @Patch, @Delete, @UseGuards, @UsePipes, etc.)
+-> Parameter Decorators (@Body, @Param, @Query, @Headers, @Req, @Res, etc.)
+-> Property Decorators (@IsString, @IsEmail, @IsNotEmpty, @MinLength, @Inject, etc.)
+-> Custom Decorators (@CurrentUser, @UserId, @UserRole)
+-> Understood the implementation and purpose of API rate limiting using @Throttle(), including limit and ttl configurations.
+-> Gained a better understanding of NestJS request flow and best practices for building maintainable APIs.
