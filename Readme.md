@@ -993,3 +993,21 @@ Perform end-to-end validation of authentication and authorization flow.
 -> Custom Decorators (@CurrentUser, @UserId, @UserRole)
 -> Understood the implementation and purpose of API rate limiting using @Throttle(), including limit and ttl configurations.
 -> Gained a better understanding of NestJS request flow and best practices for building maintainable APIs.
+
+
+--------------------------------------------------------------
+**EOD Report – 01 July 2026**
+
+**Tasks Completed:**
+
+* Learned the **Factory Pattern** and **Strategy Pattern** in NestJS, including their purpose, implementation, and differences from Dependency Injection.
+* Understood how **Factory Providers (`useFactory`)** are used in the POS-NestJS project for configuring JWT and Couchbase database connections.
+* Analyzed and implemented the **Factory Pattern** in the POS-NestJS project by understanding the creation and injection of database providers such as the Couchbase cluster and collections.
+* Successfully completed the assigned learning and implementation task for the day.
+
+**Status:**
+
+* ✅ Completed today's assigned task successfully.
+
+
+   
