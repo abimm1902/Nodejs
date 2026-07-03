@@ -1008,6 +1008,28 @@ Perform end-to-end validation of authentication and authorization flow.
 **Status:**
 
 * ✅ Completed today's assigned task successfully.
+-----------------------------------------------------------
+**EOD 02 July 2026     – SOLID Principles**
+
+* Learned the five SOLID principles:
+
+  * **S** – Single Responsibility Principle (SRP)
+  * **O** – Open/Closed Principle (OCP)
+  * **L** – Liskov Substitution Principle (LSP)
+  * **I** – Interface Segregation Principle (ISP)
+  * **D** – Dependency Inversion Principle (DIP)
+* Understood the purpose and benefits of each principle with simple examples.
+* Learned how SOLID principles improve code maintainability, scalability, and testability.
+* Explored how to apply SOLID principles in NestJS application development.
+
+----------------------------------------------------------
+**EOD Update – 03/07/2026**
+
+* Learned the **UTC date and time format** and understood its importance for storing and handling dates consistently across different time zones.
+* Explored date and time handling for doctor schedules, slots, and appointments.
+* Started implementing the **Clinic Management Mini Project** in Go.
+* Designed the project structure and began implementing core modules for user management, schedules, slots, and appointments.
+* Worked on integrating the database and resolving implementation issues during development.
 
 
    
