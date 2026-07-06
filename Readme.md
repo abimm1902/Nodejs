@@ -1030,6 +1030,35 @@ Perform end-to-end validation of authentication and authorization flow.
 * Started implementing the **Clinic Management Mini Project** in Go.
 * Designed the project structure and began implementing core modules for user management, schedules, slots, and appointments.
 * Worked on integrating the database and resolving implementation issues during development.
+----------------------------------------------------------
+
+**End of Day (EOD) Report – 06 July 2026**
+
+### Tasks Completed
+
+* Planned the architecture for the Clinic Management System using NestJS and Couchbase.
+* Designed the project structure following a modular approach.
+* Created the following modules:
+
+  * Users
+  * Schedules
+  * Slots
+  * Appointments
+* Defined the database collections and relationships between Users, Schedules, Slots, and Appointments.
+* Designed CRUD operations for all modules.
+* Implemented role-based access flow for Admin, Doctor, and Patient.
+* Planned JWT authentication and Role-Based Access Control (RBAC).
+* Defined validation rules for Users, Schedules, Slots, and Appointments.
+* Designed the API flow and project workflow.
+
+**In Progress**
+
+* Implementing CRUD APIs for Users, Schedules, Slots, and Appointments.
+* Integrating Couchbase queries and repository layer.
+* Testing APIs using Postman.
+
+  github:https://github.com/abimm1902/Clinic-management.git
+
 
 
    
