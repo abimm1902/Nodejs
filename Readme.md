@@ -1070,3 +1070,87 @@ Perform end-to-end validation of authentication and authorization flow.
 * Implemented UTC-based date/time storage for scheduling-related data.
 * Verified the Schedule creation flow and validated its functionality.
 * Performed code verification and bug fixes for schedule and slot operations.
+          =============================================
+
+  EOD – 08/07/2026
+**Tasks Completed**
+=>Implemented storing all schedule and appointment dates in UTC milliseconds using new Date(date).getTime().
+=>Added createdAt and updatedAt fields using Date.now().
+=>Updated all Couchbase documents to store meta_Id, where meta_Id matches the Couchbase document key (DOC_KEYS.*).
+=>Modified the schedule overlap validation to support an excludeId parameter during updates.
+  !--Improved slot duplication validation:
+=>Same startTime and endTime are allowed if they belong to different schedules with different date ranges.
+=>Duplicate validation now checks the doctor and overlapping schedule date ranges instead of only slot timings.
+=>Updated appointment handling to accept dates like "2026-07-10" from the frontend while storing them internally as UTC milliseconds.
+=>Worked on Couchbase queries for schedules, slots, and appointments to support the updated validation logic.
+**Key Learnings**
+=>Difference between storing date strings and UTC timestamps.
+=>Using Date.now() and new Date(date).getTime() appropriately.
+=>Why meta_Id should be stored along with the document for easier identification.
+=>How to prevent duplicate schedules and slots using overlapping date-range validation.
+=>Improved understanding of Couchbase N1QL queries and backend validation in NestJS.
+**Status**
+=>Completed the backend changes for schedule, slot, and appointment date handling and validation. The Clinic Management project was updated to use consistent UTC timestamp storage and improved duplicate-check logic.
+
+
+              =====================================================
+EOD – 09/07/2026
+**Tasks Completed**
+=>Worked on the Appointment Update API in the Clinic Management project.
+=>Updated the appointment repository to replace existing appointment documents while preserving important fields such as id and meta_Id.
+=>Added validation to verify that an appointment exists before updating it.
+=>Implemented duplicate schedule validation using the excludeId parameter to ignore the current schedule during updates.
+=>Improved Couchbase N1QL queries for schedule validation based on doctor ID and overlapping date ranges.
+=>Tested and verified the Appointment Update API and schedule validation logic.
+=>Completed the DSA test assigned by the senior, solving JavaScript-based programming questions and practicing problem-solving approaches.
+**Key Learnings**
+=>Understood how the replace() operation works in Couchbase.
+=>Learned why excludeId is necessary to prevent false duplicate detection during update operations.
+=>Improved understanding of Couchbase N1QL queries and update workflows.
+=>Gained a clearer understanding of REST API parameter types (Path vs Query).
+=>Strengthened JavaScript and DSA problem-solving skills by practicing coding questions assigned during the senior's assessment.
+**Status**
+=>Successfully completed the Appointment Update API, enhanced schedule validation logic, and finished the DSA assessment assigned by the senior.
+
+                               ====================================
+EOD – 10/07/2026
+
+**Tasks Completed**
+=>Started and worked on the School Management System test assigned by the senior.
+=>Implemented Admin Signup and Login functionalities.
+=>Developed CRUD operations for Admin.
+=>Developed CRUD operations for Teacher.
+=>Developed CRUD operations for Student.
+=>Tested all APIs using Postman and verified the CRUD operations.
+=>Solved the DSA questions assigned as part of the assessment.
+**Key Learnings**
+=>Improved understanding of authentication flow (Signup and Login).
+=>Gained hands-on experience implementing CRUD operations in NestJS.
+=>Enhanced knowledge of REST API development and testing.
+=>Improved JavaScript problem-solving and logical thinking by solving DSA questions.
+**Status**
+=>Successfully completed the assigned School Management System tasks, including authentication and CRUD operations for Admin, Teacher, and Student modules, along with the DSA questions given by the senior.
+
+                           ==========================================
+
+
+EOD – 13/07/2026
+**Tasks Completed**
+=>Continued working on the School Management System project.
+=>Implemented the OTP generation and email sending functionality for the Admin Signup module using Nodemailer.
+=>Integrated the OTP flow into the Admin Signup process.
+=>Practiced and solved JavaScript DSA questions, including:
+=>Character frequency counting.
+=>String compression (e.g., aaabbcc → a3b2c2).
+=>Expanding compressed strings (e.g., a2b3c1 → aabbbc).
+=>Finding the first non-repeating character.
+=>Merging two arrays using a for loop.
+
+**Key Learnings**
+=>Learned how to integrate OTP-based email verification into the signup flow.
+=>Gained a better understanding of JavaScript string manipulation and frequency-count algorithms.
+=>Improved debugging and code analysis skills by explaining programs line by line.
+=>Reinforced Git workflow for initializing repositories, committing changes, and pushing code to GitHub.
+**Status**
+=>Made progress on the School Management System by integrating OTP verification into the Admin Signup process, strengthened JavaScript DSA skills through coding practice, and reviewed Git commands for project version control.
+
