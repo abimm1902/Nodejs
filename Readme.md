@@ -1154,3 +1154,19 @@ EOD – 13/07/2026
 **Status**
 =>Made progress on the School Management System by integrating OTP verification into the Admin Signup process, strengthened JavaScript DSA skills through coding practice, and reviewed Git commands for project version control.
 
+                         =============================================
+                         **EOD – 14/07/2026**
+
+* Worked on the School Management Project.
+* Continued implementing backend features using NestJS.
+* Developed and tested project modules.
+* Fixed issues and improved existing functionality.
+* Learned and understood the project workflow.
+                         ===========================================
+  **EOD – 15/07/2026**
+
+* Worked on the School Management Project.
+* Implemented the Admin signup with OTP verification.
+* Worked on the login functionality.
+* Fixed bugs and tested the implemented features.
+* Continued learning and understanding the project flow.
